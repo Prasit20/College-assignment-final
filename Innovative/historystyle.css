@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:rgb(8, 8, 8);
+}
+
+.carNav{
+    padding:10px 50px;
+    display:flex;
+    background-color:rgb(8, 8, 8); ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Work Sans", sans-serif ;
+    font-size: 1rem;
+    font-weight: 350;
+    z-index: 1;
+    color:#fff;
+}
+.carNavBtns {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:20px;
+        align-items: center;
+}
+.carNavBtns a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    padding-bottom: 3px;
+}
+.carNavBtns a:hover{
+   border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.btnUnderline{
+    background-color: #fff;
+}
+.carNavLogo{
+    
+    font-family: "Mrs Saint Delafield", cursive; 
+    font-size: 2rem;
+}
+.carNavSearch{
+    width: 75px;
+    padding: 3px 5px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Work Sans", sans-serif ;
+    font-weight: 300;
+    font-size:1rem;
+}
+.carNavSearch::placeholder{
+    color: #fff;
+    font-family: "Work Sans", sans-serif ;
+    font-weight: 300;
+}
+.carNavSearch:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.historyImg{
+   background: #7D0707;
+   background: linear-gradient(0deg,rgba(125, 7, 7, 1) 0%, rgba(255, 255, 255, 1) 66%);
+   background-blend-mode: overlay;
+   border-radius: 5px;
+   background-image:url(IMG.png) ;
+   height:50vh;
+   margin:0px 5px;
+}
+.historyNames{
+    align-self: bottom;
+    background: #7D0707;
+   background: linear-gradient(0deg,rgba(125, 7, 7, 1) 0%, rgba(255, 255, 255, 1) 66%);
+}
