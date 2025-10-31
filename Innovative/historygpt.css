@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Monterosi Automobili — Our History</title>
+  <meta name="description" content="Monterosi Automobili — the history and legacy of our founder and brand." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f7f9;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#b22222; /* deep Italian red-ish accent */
+      --radius:14px;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    .site {
+      max-width: var(--max-width);
+      margin: 40px auto;
+      padding: 28px;
+    }
+
+    header.site-header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      margin-bottom:28px;
+    }
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo {
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#111827 0%, #333 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-family:"Playfair Display", serif;
+      font-weight:700;
+      font-size:20px;
+      box-shadow:0 6px 18px rgba(17,24,39,0.12);
+    }
+    .brand h1 {
+      font-family:"Playfair Display", serif;
+      font-size:20px;
+      margin:0;
+      letter-spacing:0.4px;
+    }
+    .brand p {
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    nav a {
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:16px;
+      font-weight:600;
+      font-size:14px;
+    }
+    nav a:hover{color:var(--accent)}
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(180deg, rgba(178,34,34,0.06), transparent 40%);
+      border-radius: var(--radius);
+      padding: 26px;
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:24px;
+      align-items:center;
+      box-shadow:0 8px 30px rgba(15,23,42,0.04);
+    }
+    .hero .intro h2 {
+      font-family:"Playfair Display", serif;
+      margin:0 0 10px 0;
+      font-size:28px;
+      color:#0f172a;
+    }
+    .hero .intro p { margin:0;color:var(--muted); }
+
+    /* Founder box (medium size) */
+    .founder-card {
+      background:var(--card);
+      padding:12px;
+      border-radius:12px;
+      text-align:center;
+      box-shadow:0 6px 18px rgba(17,24,39,0.06);
+    }
+    .founder-photo {
+      width:100%;
+      height:240px; /* medium size box */
+      max-width:320px;
+      object-fit:cover;
+      border-radius:8px;
+      display:block;
+      margin:0 auto 12px auto;
+      background:linear-gradient(180deg,#e6e6e8,#f3f3f5);
+    }
+    .founder-name { font-weight:700; margin:0; font-size:16px; }
+    .founder-title { margin:4px 0 0 0; color:var(--muted); font-size:13px; }
+
+    /* History section */
+    .history {
+      margin-top:22px;
+      display:grid;
+      grid-template-columns: 1fr 350px;
+      gap:24px;
+      align-items:start;
+    }
+    .card {
+      background:var(--card);
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 6px 18px rgba(17,24,39,0.06);
+    }
+    .card h3 {
+      margin-top:0;
+      font-family:"Playfair Display", serif;
+      font-size:20px;
+    }
+    .timeline {
+      margin-top:14px;
+      border-left:2px solid rgba(17,24,39,0.06);
+      padding-left:14px;
+    }
+    .event {
+      margin-bottom:18px;
+    }
+    .event time {
+      display:block;
+      color:var(--accent);
+      font-weight:700;
+      margin-bottom:6px;
+      font-size:13px;
+    }
+    .event p { margin:0;color:var(--muted); }
+
+    /* small aside */
+    .aside {
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .stat {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:12px;
+      border-radius:10px;
+      ba
