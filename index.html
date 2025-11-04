@@ -13,29 +13,83 @@
         rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cedarville+Cursive&family=Fleur+De+Leah&family=Hurricane&family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="carHead">
-            <video class="carHeadVideo" id="titleVid" autoplay loop>
+            <video class="carHeadVideo" id="titleVid" autoplay muted loop>
                 <source src="Resources/TitleVid1.mp4" type="video/mp4">
             </video>
-            <div class="carNav">
-                <div class="carNavLogo">
-                 </div>
-                <div class="carNavBtns">
-                    <p class="carNavBtnsItem"><a href="index.html">HOME</a></p>
-                    <p class="carNavBtnsItem"><a href="models.html">MODELS</a></p>
-                    <p class="carNavBtnsItem"><a href="history.html">HISTORY</a></p>
-                    <p class="carNavBtnsItem"><input type="text" class="carNavSearch" id="carNavSearch" placeholder="Search"></p>
-                    <p class="carNavBtnsItem"><a href="index.html"><i class="fa-regular fa-user"></i></a></p>
+            <div class="carNavOverlayBg">
+                <div class="carNavOverlayHeader">
+                    <button class="carNavOverlayCloseBtn" id="menuClose">&times;</button>
                 </div>
+                <div class="carNavOverlay">
+                    <div class="carNavOverlayLinksContainer">
+                        <ul class="carNavOverlayList">
+                            <li class="carNavOverlayListItem"><a class="carNavOverlayLinksMain" href="models.html#modelS">SUPERCARS</a></li>
+                                       <ul class="carNavOverlaySubList">
+                                            <li><a class="carNavOverlayLinks" href="models.html#modelS">Model S</a></li>
+                                            <li><a class="carNavOverlayLinks" href="models.html#model3">Model 3</a></li>
+                                            <li><a class="carNavOverlayLinks" href="models.html#modelX">Model X</a></li>
+                                        </ul>
+                            <li class="carNavOverlayListItem"><a class="carNavOverlayLinksMain" href="models.html#model3">TRACK PERFORMANCE</a></li>
+                                    <ul class="carNavOverlaySubList">
+                                        <li><a  class="carNavOverlayLinks" href="models.html#modelS">Model S</a></li>
+                                        <li><a  class="carNavOverlayLinks" href="models.html#model3">Model 3</a></li>
+                                        <li><a  class="carNavOverlayLinks" href="models.html#modelX">Model X</a></li>
+                                    </ul>
+                            <li class="carNavOverlayListItem"><a class="carNavOverlayLinksMain" href="models.html#modelX">HERITAGE</a></li>
+                                    <ul class="carNavOverlaySubList">
+                                        <li><a class="carNavOverlayLinks" href="models.html#modelS">Model S</a></li>
+                                        <li><a class="carNavOverlayLinks" href="models.html#model3">Model 3</a></li>
+                                        <li><a class="carNavOverlayLinks" href="models.html#modelX">Model X</a></li>
+                                    </ul>
+                            <li class="carNavOverlayListItem"><a class="carNavOverlayLinksMain" href="Assesories.html">ASSESORIES</a></li>
+                            <li class="carNavOverlayListItem"><a class="carNavOverlayLinksMain" href="Support.html">OWNERSHIP SUPPORT</a></li>
+                               <ul class="carNavOverlaySubList">
+                                    <li><a class="carNavOverlayLinks" href="Support.html#charging">FIND A DEALER</a></li>
+                                    <li><a class="carNavOverlayLinks" href="Support.html#software">FIND A SERVICE CENTER</a></li>
+                                    <li><a class="carNavOverlayLinks" href="Support.html#warranty">WARRANTY</a></li>
+                                </ul>
+                            <li class="carNavOverlayListItem"><a class="carNavOverlayLinksMain" href="History.html">HISTORY</a></li>
+                        </ul> 
+                    </div>
+                    <div class="carOverlayCards">
+                        <div class="carOverlayCard">
+                            <!-- <img src="Resources/overlay1.jpg" alt="car overlay image" class="carOverlayCardImg"> -->
+                        </div>
+                        <div class="carOverlayCard">
+                            <!-- <img src="Resources/overlay2.jpg" alt="car overlay image" class="carOverlayCardImg"> -->
+                        </div>
+                        <div class="carOverlayCard">
+                            <!-- <img src="Resources/overlay1.jpg" alt="car overlay image" class="carOverlayCardImg"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carNav">
+            <div class="carNavMenuBtn">
+                    <button class="carNavMenuBtn" id="menuOpen">&#8801 MENU</button>
+            </div>
+            <div class="carNavLogo">
+                    <p class="carNavLogo"><a href="index.html">Monterosi</a></p>
+            </div>
+            <div class="carNavBtns">
+                    <p class="carNavBtnsItem"><a href="models.html">MODELS</a></p>
+                    <p class="carNavBtnsItem"><a id="profile" href="index.html"><i class="fa-regular fa-user"></i></a></p>
+            </div>
             </div>
             <div class="carHeadTitleContainer">
                     <p class="carHeadTitle">BUILD YOUR <span class="carHeadTitleHl">Dream</span></p>
             </div>
         </header>
         <div class="carBody">
+            <div class="carBodyHeroSection">
+                <div class="carBodyHeroTextContainer">
             </div>
         <script src="app.js" ></script>
         <script src="https://kit.fontawesome.com/2fe502e88d.js" crossorigin="anonymous"></script>

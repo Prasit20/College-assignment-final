@@ -3,31 +3,31 @@
     margin:0px;
 }
 body{
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(58, 58, 58);
 }
 .carHead{
     position: relative;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     padding: 0px;
     color:rgb(226, 226, 226);
     display:flex;
     flex-direction: column;
     justify-content: center;
+    background-color:rgba(148, 148, 148, 0.853) ;
     z-index: 1;
 }
 .carHeadVideo{
-    position: fixed;
+    position: absolute;
     object-fit: cover;
     height: 100%;
     width: 100%;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .carNav{
     padding:10px 50px;
     display:flex;
-    background-color:rgba(8, 8, 8, 0.866); ;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +35,120 @@ body{
     font-size: 1rem;
     font-weight: 350;
     z-index: 1;
+    color:#fff;
+    transition: all 0.5s ease-in-out;
+}
+.carNavOverlayBg{
+    display:none;
+    margin:10px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 25px 75px;
+    font-family: "Work Sans", sans-serif ;
+    font-size: 1rem;
+    font-weight: 350;
+    color:black;
+    background-color: rgba(214, 210, 210, 0.853);
+    width:45vw;
+    height: 85vh;
+    border-radius: 7.5px;
+}
+.carNavOverlay{
+   display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:45vw;
+    height: 85vh;
+
+}
+.carOverlayLinksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.carNavOverlayCloseBtn{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 10px;
+    align-content: center;
+    font-family:"Work Sans", sans-serif ;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+    margin-left:-50px
+}
+.carNavOverlayList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+.carNavOverlayListItem{
+    padding: 5px 0px;
+    width: 100%;
+    border-bottom: 1px solid #b60000;
+}
+.carNavOverlayListItem:last-child{
+    border-bottom: none;
+}
+.carNavOverlayLinksMain{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+.carNavOverlaySubList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15px;
+    margin-top: 7px;
+    width: 100%;
+    font-size: 1rem;
+    color: #5d5d5d;
+}
+.carNavOverlayLinks{
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #5d5d5d;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+.carNavOverlayCards{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding:25px
+}
+.carOverlayCard{
+    width: 300px;
+    height: 150px;
+    background-color: #6c6b6b;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-top:25px;
+    flex:1;
+    border-radius: 7.5px;
+    padding: 10px;
 }
 .carNavBtns {
     display: flex;
@@ -46,31 +160,54 @@ body{
 .carNavBtns a{
     text-decoration: none;
     color: #fff;
+    padding-bottom: 3px;
+    transition: all 0.5s ease-in-out;
+}
+.carNavBtns a:hover{
+    color: rgb(226, 0, 0);
+    text-shadow: #000 1px 1px 2px;
 }
 .carNavLogo{
-    height:40px;
-    width: 40px;
-    border: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Mrs Saint Delafield", cursive; 
+    font-size: 3rem;
+    transition: all 0.5s ease-in-out;
+    font-weight: 500;
 }
-.carNavSearch{
-    width: 75px;
-    padding: 3px 5px;
-    border: none;
-    border-bottom: 2px solid #fff;
+.carNavLogo p{
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+}
+.carNavLogo a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}   
+.carNavLogo a:hover{
+    color: rgb(226, 0, 0);
+    font-weight: 500;
+    text-shadow: #000 1px 1px 2px
+}
+.carNavMenuBtn{
     background-color: transparent;
+    border: none;
     color: #fff;
-    font-family: "Work Sans", sans-serif ;
-    font-weight: 300;
-    font-size:1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+    align-content: center;
+    font-family:"Work Sans", sans-serif ;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
 }
-.carNavSearch::placeholder{
-    color: #fff;
-    font-family: "Work Sans", sans-serif ;
-    font-weight: 300;
-}
-.carNavSearch:focus{
-    outline: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
+.carNavMenuBtn:hover{
+    color: rgb(226, 0, 0);
+    text-shadow: #000 1px 1px 2px;
 }
 .carHeadTitleContainer{
     text-align: center;
@@ -86,14 +223,19 @@ body{
 .carHeadTitleHl{
     font-family: "Mrs Saint Delafield", cursive;
     font-size: 6.5rem;
+    transition: all 1s ease-in-out;
 }
-.carbody{
-    padding: 50px;
-    background-color: rgb(18, 18, 18);
-    color: #fff;
+.carBody{
+    padding: 100px 75px;
     font-family: "Work Sans", sans-serif ;
-    font-weight: 300;
-    font-size: 1.2rem;
-    height: 25vh;
-    z-index: 1;
+    color:#000000;
+    
+}
+.carBodyHeroSection{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 0px;
+    background-color: #5d5d5d;
+    border-radius: 10px;
 }
